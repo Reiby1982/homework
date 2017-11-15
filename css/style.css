@@ -1,88 +1,120 @@
+/*Подключение сетки*/
+@import "grid.css";
+@import "normalise.css";
+
 /*Рисунок в топе*/
-.bar_img {
-    border-radius: 10px;
-    width:100%;
-    height: 100px;
+.bar {
+	height: 100px;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	background-color: #4682B4;
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px; 
 }
-/*Заголовок*/
-h1 {
-	text-align: center;
+.bar p {
+	white-space: nowrap;
 	font-weight: bold;
 	font-style: italic;
 	font-family: fantasy;
 	font-size: 35px;
-	color: #483D8B;
+	color: white;
+	padding: 30px;
+	margin: 0;
+	position: absolute;
+	top: 10px;
+	left: 120px;
+}
+.logo {
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	top: 10px;
+	left: 40px;
+}
+.logo img {
+	height: 90px;
 }
 /*Меню*/
 .menu {
-	text-align: center;
-	font-weight: bold;
-	font-size: 20px;
-	width:500px;
-    margin: 0 auto;
-    background: #FFFAFA;
-    border: solid 1px white;
+	background: #4682B4;
 }
-.menu th{
-	border: solid 1px black;
-    border-radius: 10px;
-    background: #FFFACD;
-    padding-left: 30px;
-    padding-right: 30px;
+.menu ul {
+	margin: 0;
+	padding: 0;
 }
-/*Убирает подчеркивание ссылки*/
-a{
+.menu li {
+	display: inline-block;
+	list-style-type: none; /*убрать маркеры списка*/
+	padding-left: 20px;
+	margin: 0;
+}
+.menu a {
+	display: inline-block;
+	padding: 20px;
 	text-decoration: none;
-	color: #333;
-} 
-a:hover {
-	color: #808000;
+	text-align: center;
+	color: white;
+	margin: 0;
+	font-size: 17px;
+	font-weight: bold;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
 }
+.menu a:hover {
+	background: SkyBlue;
+}
+
 /*Цвет фона страницы*/
 body {
-	background-color: #FFFAFA;
+	background-color: PowderBlue;
 }
 h2 {
 	text-align: center;
 	font-weight: bold;
 }
-img {
+.index img {
 	display:block; 
 	margin:0 auto;
 	border-radius: 20px;
 	height: 200px;
 }
-p {
-	padding-left: 15px;
-}
+
 /*Новости*/
 h3 {
 	text-align: center;
 }
-.news {
-	border-collapse: collapse;
-	width: 200px;
-	margin: 0 auto;
+.news a{
+	text-decoration: none;
 }
-.news td {
-	border: solid 1px black;
-    background: #FFF5EE;
+.news img {
+	height: 170px;
+	border-radius: 15px;
+	display:block; 
+	margin:0 auto;
 }
+
 /*Фото*/
 .foto {
-    margin: 0 25px;
+     padding: 0;
 }
 .foto img{
-    height: 300px;
-    border: solid 1px DarkBlue;
-    display: inline-block;
-}
+	display:block;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 10px;
+    border: solid 0px black;
+    border-radius: 10px;
+
+ }
+
 /*Контакты*/
 table {
 	margin: 0 auto;
-	border: solid 1px black;
+	border: solid 1px white;
     border-radius: 10px;
-    background: #FFF5EE;
+    background-color: #4682B4;
+    color: white;
 }
 .position  {
 	text-align: left;
@@ -92,25 +124,42 @@ table {
 	text-align: left;
 	font-weight: bold;
 }
+
 /*Обратная связь*/
 .contacts {
 	margin: 0 auto;
-	border: solid 1px blacks;
+	padding:0;
+	border: solid 0px black;
     border-radius: 10px;
-    background: #E0FFFF;
-    background: #FFFAFA;
-    border: solid 1px white;
-}
+    background: #4682B4;
+ }
 .contacts th {
 	width: 190px;
-	border: solid 1px black;
+	border: solid 1px white;
     border-radius: 5px;
-    background: #F5F5F5;
+    background: #4682B4;
+    color: white;
 }
+ .adress a {
+ 	text-decoration: none;
+ 	color: white;
+ 	font-weight: bold;
+ }
 /*Футер*/
 .footer {
+  	position: absolute;
+  	width: 100%;
+  	height: 50px;
+	padding-top: 10px;
+	margin-top: 20px;
+	background-color: #4682B4;
+	border-bottom-right-radius: 25px;
+	border-bottom-left-radius: 25px;
+	white-space: nowrap;
 	text-align: center;
 	font-weight: bold;
 	font-style: italic;
-	font-size: 25px;
+	font-family: fantasy;
+	font-size: 30px;
+	color: white;
 }
