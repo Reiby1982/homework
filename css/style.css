@@ -42,6 +42,7 @@
 .menu ul {
 	margin: 0;
 	padding: 0;
+	text-align: center
 }
 .menu li {
 	display: inline-block;
@@ -67,7 +68,7 @@
 
 /*Цвет фона страницы*/
 body {
-	background-color: PowderBlue;
+	background: linear-gradient(45deg, #EECFBA, #C5DDE8);
 }
 h2 {
 	text-align: center;
@@ -85,6 +86,10 @@ h2 {
 h3 {
 	text-align: center;
 }
+
+.news {
+	margin: 10px;
+}
 .news a{
 	text-decoration: none;
 }
@@ -96,18 +101,51 @@ h3 {
 }
 
 /*Фото*/
-.foto {
-     padding: 0;
+.container {
+	margin: 0 auto;
+	max-width: 1000px;
 }
-.foto img{
-	display:block;
-    height: 200px;
-    margin: 0 auto;
-    margin-top: 10px;
-    border: solid 0px black;
-    border-radius: 10px;
-
- }
+.img {
+	height: 200px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 10px;
+	border:2px dashed white;
+	border-radius: 10px;
+}
+.img1 {
+	background-image: url(../pictures/Photos/Photo_1.jpg);
+}
+.img2 {
+	background-image: url(../pictures/Photos/Photo_2.jpg);
+}
+.img3 {
+	background-image: url(../pictures/Photos/Photo_3.jpg);
+}
+.img4 {
+	background-image: url(../pictures/Photos/Photo_4.jpg);
+}
+.img5 {
+	background-image: url(../pictures/Photos/Photo_5.jpg);
+}
+.img6 {
+	background-image: url(../pictures/Photos/Photo_6.jpg);
+}
+.img7 {
+	background-image: url(../pictures/Photos/Photo_7.jpg);
+}
+.img8 {
+	background-image: url(../pictures/Photos/Photo_8.jpg);
+}
+.img9 {
+	background-image: url(../pictures/Photos/Photo_9.jpg);
+}
+.img10 {
+	background-image: url(../pictures/Photos/Photo_10.jpg);
+}
+.img11 {
+	background-image: url(../pictures/Photos/Photo_11.jpg);
+}
 
 /*Контакты*/
 table {
