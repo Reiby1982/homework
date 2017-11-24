@@ -50,7 +50,7 @@
 }
 .menu a {
 	display: inline-block;
-	padding: 20px;
+	padding: 10px;
 	text-decoration: none;
 	text-align: center;
 	color: white;
@@ -69,7 +69,7 @@
 
 /*Цвет фона страницы*/
 body {
-	background: linear-gradient(45deg, #EECFBA, #C5DDE8);
+	/*background: linear-gradient(45deg, #EECFBA, #C5DDE8);*/
 	margin: 0;
 }
 h2 {
@@ -89,26 +89,29 @@ h2 {
 .flex1 {
     flex:1; /*1 часть от родителя*/
 }
+
 /*Главная страница*/
 .index h2 {
-	margin: 10px;
 	margin-top: 50px;
 	font-family: Verdana;
 	color: DarkSlateGray;
 }
 .index p {
-	margin: 10px;
+	padding: 10px; 
 	font-family: Verdana;
 	color: DarkSlateGray;
 }
 .index img {
-	display:block; 
-	margin:0 auto;
-	padding: 10px;
+	margin-top: 30px;
+	display: block;
+    max-width: 100%;
+    height: auto;
 	border-radius: 20px;
-	height: 200px;
+	
 }
-
+.box {
+	border: 0px dashed gray;
+}
 /*Новости*/
 h3 {
 	text-align: center;
@@ -237,4 +240,41 @@ table {
 }
 .content {
   min-height: calc(100vh - 50px);
+}
+/*Медиазапросы */
+
+@media (max-width: 479px) {
+	.col-12-sm {
+		width: 100%
+	}
+	.col-12-sm h2 {
+		font-size: 0.9em;
+	}
+	.col-12-sm p {
+		font-size: 0.6em;
+	}	
+	body {
+		background-color: LightBlue;
+	}
+}
+@media (min-width: 480px) and (max-width: 768px) {
+	.col-12-md {
+		width: 100%;
+	}
+	.col-12-md h2 {
+		font-size: 1.1em;
+	}
+	.col-12-sm p {
+		font-size: 0.8em;
+	}
+
+	body {
+		background-color: Gainsboro;
+	}
+}
+@media (min-width: 769px) {
+	
+	body {
+		background-color: PapayaWhip;
+	}
 }
