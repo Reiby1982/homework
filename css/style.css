@@ -90,6 +90,33 @@ h2 {
     flex:1; /*1 часть от родителя*/
 }
 
+/*Slider*/
+.slider ul {
+	padding: 0;
+	margin:10px;
+}
+.slider li{
+	height: 250px;
+	background-repeat: no-repeat;
+	background-size: cover; /*auto/contain*/; /*уместить картинку в контейнере*/
+	list-style-type: none; /*убираем точки списка*/
+	display: none;
+}
+.slider li:first-child {
+	background-image: url(../pictures/picture_1.jpg);
+}
+.slider li:nth-child(2)  {
+	background-image: url(../pictures/picture_2.jpg);
+}
+.slider li:nth-child(3)  {
+	background-image: url(../pictures/picture_3.jpg);
+}
+.slider li:last-child  {
+	background-image: url(../pictures/picture_4.jpg);
+}
+li.active-slider {
+	display: block; /*открыли ранее скрытый li*/
+}
 /*Главная страница*/
 .index h2 {
 	margin-top: 50px;
